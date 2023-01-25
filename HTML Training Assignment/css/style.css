@@ -1,0 +1,111 @@
+body{
+    background-color: #FAFAFA;
+    /* min-height: 100vh; */
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left{
+    margin: 5% 10% 0% 8%;
+}
+
+.left img{
+    border-radius: 50%;
+    width: 576px;
+    height: 576px;
+    border: 20px solid #FFFFFF;
+    box-shadow: 0px 4px 31px #0000000A;
+}
+
+.right{
+    margin-top: 106px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+}
+
+.top h1{
+    font-size: 40px;
+}
+
+div img{
+    width: 272px;
+}
+
+.top1{
+    text-align: left;
+    font: normal normal 300 40px/47px Roboto;
+    color: #3E3E3E;
+}
+
+span{
+    text-align: left;
+    font: normal normal 900 40px/53px Roboto;
+    color: #C8242F;
+    }
+
+.login-text{
+    text-align: left;
+    font: normal normal normal 25px/33px Roboto;
+    color: #3E3E3E;
+}
+
+input{
+    padding-left: 1rem;
+    margin-bottom: 27px;
+    width: 75%;
+    height: 49px;   
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+}
+
+.forgot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 77%;
+}
+
+button{
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 23px;
+    width: 30%;
+    height: 45px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.forgot p{
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+
+}
+
+.bottom{
+    display: flex;
+}
+
+.member{
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+}
+
+.register{
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+    margin-left: 5px;
+}
