@@ -86,7 +86,6 @@ button{
 .forgot p{
     text-align: left;
     font: normal normal normal 15px/20px Roboto;
-    letter-spacing: 0px;
     color: #ADADAD;
 
 }
@@ -98,14 +97,12 @@ button{
 .member{
     text-align: left;
     font: normal normal normal 15px/20px Roboto;
-    letter-spacing: 0px;
     color: #ADADAD;
 }
 
 .register{
     text-align: left;
     font: normal normal normal 15px/20px Roboto;
-    letter-spacing: 0px;
     color: #C8242F;
     margin-left: 5px;
 }
