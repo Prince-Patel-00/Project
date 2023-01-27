@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style_dash.css">
+</head>
+<body>
+    <div id="nav">
+        <div class="dropdown-logo">
+            <img src="images/menu-bar.svg" alt="menu-bar" onclick="hide()">
+            <img src="images/header-logo.svg" alt="logo">
+        </div>
+        <div class="searchbar">
+            <img src="images/search-icon.svg" alt="search-icon">
+            <input type="text" placeholder="search">
+        </div>
+        <div class="notification">
+            <img src="images/notification-icon.svg" alt="notification">
+            <div class="profile">
+                <img src="images/profile.png" alt="profile">
+                <p>John Doe</p>
+                <img src="images/downward-arrow.svg" alt="downward-arrow">
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="sidebar" class="sidebar width-0">
+            <div class="sidebarsub">
+                <div class="dashboard dashboard-active">
+                    <img src="images/dashboard-default.svg" alt="dashboard-default">
+                    <p>Dashboard</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/graph-default.svg" alt="graph-default">
+                    <p>Analysis</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/inbox-default.svg" alt="inbox-default">
+                    <p>Inbox</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/clock-default.svg" alt="clock-default">
+                    <p>History</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/user-default.svg" alt="user-default">
+                    <p>Users</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/maintenance-default.svg" alt="maintenance-default">
+                    <p>Maintenance</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/setting-default.svg" alt="setting-default">
+                    <p>Setting</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="dashboard">
+            <h1 class="dashboard-title">Dashboard</h1>
+
+            <div id="sale">
+                <div class="sale">
+                    <img src="images/star.svg" alt="star">
+                    <div class="inner">
+                        <h2>23,456</h2>
+                        <p>New Products</p>
+                    </div>
+                </div>
+                <div class="sale">
+                    <img src="images/new-product.svg" alt="new-product">
+                    <div class="inner">
+                        <h2>2345</h2>
+                        <p>Added Products</p>
+                    </div>
+                </div>
+                <div class="sale">
+                    <img src="images/total-product.svg" alt="total-product">
+                    <div class="inner">
+                        <h2>32,456</h2>
+                        <p>Total Products</p>
+                    </div>
+                </div>
+                <div class="sale">
+                    <img src="images/dollar-filled.svg" alt="dollar-filled">
+                    <div class="inner">
+                        <h2>5678</h2>
+                        <p>Today's Sale</p>
+                    </div>
+                </div>
+                <div class="sale">
+                    <img src="images/money-bag.svg" alt="money-bag">
+                    <div class="inner">
+                        <h2>33,5342</h2>
+                        <p>Total Sale</p>
+                    </div>
+                </div>
+            </div>
+<br><br>
+            <div id="graph">
+                <div class="graph1">
+                    <div class="graph-title">
+                        <p>Sale</p>
+                        <div class="h5">
+                            <h5>Weekly</h5>
+                            <h5>Monthly</h5>
+                            <h5 class="h5-active">Yearly</h5>
+                        </div>
+                    </div>
+                    <img src="images/data-graph.png" alt="data-graph">
+                </div>
+
+                <div class="graph2">
+                    <div class="graph-title">
+                        <p>Sales by Country</p>
+                    </div>
+                    <img src="images/pie-chart.svg" alt="pie-chart">
+                    <div class="desc">
+                        <div>
+                            <div class="contry-name">
+                                <div class="dot" style="background-color: #C8242F;"></div>
+                                <p>United States of America</p>
+                            </div>
+                            <div class="contry-name">
+                                <div class="dot" style="background-color: #F16C20;"></div>
+                                <p>Russia</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="contry-name">
+                                <div class="dot" style="background-color: #A2B86C;"></div>
+                                <p>Canada</p>
+                            </div>
+                            <div class="contry-name">
+                                <div class="dot" style="background-color: #EBC844;"></div>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="table">
+                <div class="invoice">
+                    <p class="invoice-title">Invoices</p>
+                    <p class="view-all">View All</p>
+                </div>
+
+                <div style="overflow-x:auto;">
+                    <table>
+                        <tr>
+                            <th>INVOICE</th>
+                            <th>COMPANY NAME</th>
+                            <th>EMAIL</th>
+                            <th>DUE DATE</th>
+                            <th>STATUS</th>
+                            <th>AMOUNT</th>
+                        </tr>
+                        <tr>
+                            <td>651535</td>
+                            <td>Public Adjusting Firm</td>
+                            <td>georgia.young@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td> <p class="common-status paid" >Paid</p> </td>
+                            <td>$47,800</td>
+                        </tr>
+                        <tr>
+                            <td>558612</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td> <p class="common-status paid" >Paid</p> </td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>558612</td>
+                            <td>Johnson</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td> <p class="common-status paid" >Paid</p> </td>
+                            <td>67</td>
+                        </tr>
+                        <tr>
+                            <td>558612</td>
+                            <td>Johnson</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td> <p class="common-status paid" >Paid</p> </td>
+                            <td>67</td>
+                        </tr>
+                        <tr>
+                            <td>651535</td>
+                            <td>Johnson</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td> <p class="common-status failed" >Failed</p> </td>
+                            <td>67</td>
+                        </tr>
+                        <tr>
+                            <td>653518</td>
+                            <td>Johnson</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td> <p class="common-status pending" >Pending</p> </td>
+                            <td>67</td>
+                        </tr>
+                        <tr>
+                            <td>487441</td>
+                            <td>Johnson</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td> <p class="common-status paid" >Paid</p> </td>
+                            <td>67</td>
+                        </tr>
+                        <tr>
+                            <td>267400</td>
+                            <td>Johnson</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td> <p class="common-status failed" >Failed</p> </td>
+                            <td>67</td>
+                        </tr>
+                        <tr>
+                            <td>449003</td>
+                            <td>Johnson</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td> <p class="common-status paid" >Paid</p> </td>
+                            <td>67</td>
+                        </tr>
+                    </table>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    let sidebar = document.getElementById("sidebar");
+    function hide(){
+        sidebar.classList.toggle("width-0")
+        sidebar.classList.toggle("slidebar-active")
+    }
+</script>
+</html>

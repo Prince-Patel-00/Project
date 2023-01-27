@@ -6,17 +6,18 @@ body{
 #container{
     display: flex;
     justify-content: space-between;
-
+    /* width: 90%; */
 }
 
 .left{
     margin: 5% 10% 0% 8%;
+    /* width: 40%; */
 }
 
 .left img{
     border-radius: 50%;
+    /* width: 110%; */
     width: 576px;
-    height: 576px;
     border: 20px solid #FFFFFF;
     box-shadow: 0px 4px 31px #0000000A;
 }
@@ -24,7 +25,7 @@ body{
 .right{
     margin-top: 106px;
 }
-
+/* 
 .top{
     display: flex;
     align-items: center;
@@ -32,7 +33,7 @@ body{
 
 .top h1{
     font-size: 40px;
-}
+} */
 
 div img{
     width: 272px;
@@ -84,9 +85,8 @@ button{
 }
 
 .forgot p{
-    text-align: left;
+    /* text-align: left; */
     font: normal normal normal 15px/20px Roboto;
-    letter-spacing: 0px;
     color: #ADADAD;
 
 }
@@ -96,16 +96,84 @@ button{
 }
 
 .member{
-    text-align: left;
+    /* text-align: left; */
     font: normal normal normal 15px/20px Roboto;
-    letter-spacing: 0px;
     color: #ADADAD;
 }
 
 .register{
-    text-align: left;
+    /* text-align: left; */
     font: normal normal normal 15px/20px Roboto;
-    letter-spacing: 0px;
     color: #C8242F;
     margin-left: 5px;
+}
+
+
+@media screen and (max-width: 1250px) and (min-width: 801px)
+{
+    #container{
+        justify-content: space-between;
+    }
+    .left{
+        width: 125%;
+        margin: auto;
+    }
+    .left img{
+        width: 80%;
+        /* margin: auto; */
+    }
+    .right{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width : 800px)
+{
+    #container
+    {
+        flex-direction: column;
+        margin-top: 3rem;
+    }    
+    .left img
+    {
+        width: 90%;
+    }
+    .right
+    {
+        width: 90%;
+        margin: auto;
+        align-items: center;
+    }
+    .top img
+    {   
+        width: 60%;
+        margin-top: 5%;
+        margin-left: 20%;
+    }
+    .top1
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .login-text
+    {
+        text-align: center;
+    }
+    input
+    {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    button{
+        margin-left: 10%;
+    }
+    .forgot{
+        width: 85%;
+    }
+    .bottom
+    {
+        justify-content: center;
+    }
 }
