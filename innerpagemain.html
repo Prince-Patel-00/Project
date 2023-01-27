@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innerpage</title>
+    <link type="text/css" rel="stylesheet" href="css/style_innerpage.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div id="nav">
+        <div class="dropdown-logo">
+            <img src="images/menu-bar.svg" alt="menu-bar" onclick="hide()">
+            <img src="images/header-logo.svg" alt="logo">
+        </div>
+        <div class="searchbar">
+            <img src="images/search-icon.svg" alt="search-icon">
+            <input type="text" placeholder="search">
+        </div>
+        <div class="notification">
+            <img src="images/notification-icon.svg" alt="notification">
+            <div class="profile">
+                <img src="images/profile.png" alt="profile">
+                <p>John Doe</p>
+                <img src="images/downward-arrow.svg" alt="downward-arrow">
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="sidebar" class="sidebar width-0">
+            <div class="sidebarsub">
+                <div class="dashboard">
+                    <img src="images/dashboard-default.svg" alt="dashboard-default">
+                    <p>Dashboard</p>
+                </div>
+                <div class="dashboard dashboard-active">
+                    <img src="images/graph-default.svg" alt="graph-default">
+                    <p>Analysis</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/inbox-default.svg" alt="inbox-default">
+                    <p>Inbox</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/clock-default.svg" alt="clock-default">
+                    <p>History</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/user-default.svg" alt="user-default">
+                    <p>Users</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/maintenance-default.svg" alt="maintenance-default">
+                    <p>Maintenance</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/setting-default.svg" alt="setting-default">
+                    <p>Setting</p>
+                </div>
+            </div>
+        </div>
+
+        <form>
+            <h5>One Column</h5>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Name" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <select class="form-select select1" id="inputGroupSelect01">
+                <option selected>Dropdown</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Multiple Lines</label>
+              </div>
+              <h5>Two column</h5>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="John Doe" aria-label="Last name">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Password" aria-label="First name">
+                </div>
+                <select class="form-select col select1" id="inputGroupSelect01">
+                    <option selected>Dropdown</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+              </div>
+              <h5>Three Column</h5>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Focus" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Password" aria-label="Last name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control disabled" placeholder="John Doe" aria-label="Last name" disabled>
+                  </div>
+              </div>
+              <h5>Four Column</h5>
+              <div class="row">
+                <div class="col">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Enter Valid data</div>
+                  </div>
+                  <div class="col">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                    <div id="emailHelp" class="form-text">Enter your full Name as per ID</div>
+                  </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="John Doe" aria-label="Last name">
+                </div>
+                <div class="col">
+                    <select class="form-select col" id="inputGroupSelect01">
+                        <option selected>Dropdown</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                  </div>
+              </div>
+              <h5>Other Design Elements</h5>
+              <h6>File Upload</h3>
+                <button><img src="images/cloud-upload-icon.svg">Upload</button>
+                <h6>Radio Button</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Option 1</label>
+                  </div>
+                  <div class="form-check form-check-inline checked">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Option 2</label>
+                  </div>
+                  <h6>Check Box</h6>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
+                  </div>
+                  <h6>Snackbar</h6>
+                  <div class="alert alert-danger d-flex align-items-center" role="alert">
+                    <img src="images/error-icon.svg" class="error-img">
+                      This is an alert message
+                  </div>
+                  <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <img src="images/warning-icon.svg" class="error-img">
+                    This is an warning message
+                  </div>
+                  <h6>Call to action</h6>
+                  <button type="button" class="btn btn-danger">Primary</button>
+                  <button type="button" class="btn">Secondary</button>
+
+          </form>
+
+    </div>
+</body>
+<script>
+    let sidebar = document.getElementById("sidebar");
+    function hide(){
+        sidebar.classList.toggle("width-0")
+        sidebar.classList.toggle("slidebar-active")
+    }
+</script>
+</html>
