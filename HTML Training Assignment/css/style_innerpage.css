@@ -62,16 +62,33 @@ input{
     font: normal normal normal 16px/21px Roboto;
 }
 
+/*
+
+// before update
+
 .sidebar{
     position: fixed;
     top: 0;
     left: 0;
     margin-top: 80px;
     background-color: #FFFFFF;
-    /* width: 242px; */
+   // width: 242px; 
     min-height: 100vh;
     overflow: hidden;
     z-index: 9;
+    transition: 600ms;
+} */
+
+.sidebar{
+    /* position: fixed;
+    top: 0; */
+    /* left: 0;  */
+    /* margin-top: 80px; */
+    background-color: #FFFFFF;
+    /* width: 242px; */
+    min-height: 100vh;
+    overflow: hidden;
+    /* z-index: 9; */
     transition: 600ms;
 }
 
@@ -330,6 +347,10 @@ hr{
 }
 
 
+/* 
+
+// before update media query //
+
 @media screen and (max-width: 501px) and (min-width: 360px) {
     
     #nav{
@@ -370,6 +391,90 @@ hr{
 @media screen and (max-width: 900px) and (min-width: 500px) {
     
     #nav{
+        // width: 80%;
+        justify-content: space-around;
+    }
+
+    .dropdown-logo{
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+    }
+
+    .notification{
+        display: flex;
+        width: 35%;
+        justify-content: space-between;
+    }
+
+    .searchbar{
+        display: none;
+    }
+    .searchbar-dash{
+        display: flex !important;
+        width: 2rem;
+        // align-items: flex-start; 
+        margin-right: 60%;
+        align-items: center;
+    }
+
+} */
+
+
+@media screen and (max-width: 501px) and (min-width: 300px) {
+    
+    #nav{
+        justify-content: space-around;
+    }
+
+    .dropdown-logo{
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+    }
+
+    .notification{
+        display: flex;
+        width: 28%;
+        justify-content: space-between;
+    }
+
+    .profile{
+        display: flex;
+        width: 60%;
+        justify-content: space-around;
+    }
+    .profile p{
+        display: none;
+    }
+
+    .searchbar{
+        display: none;
+    }
+    
+    .searchbar-dash{
+        display: flex !important;
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 80px;
+        background-color: #FFFFFF;
+        /* width: 242px; */
+        min-height: 100vh;
+        overflow: hidden;
+        z-index: 9;
+        transition: 600ms;
+    }
+
+}
+
+
+@media screen and (max-width: 1140px) and (min-width: 500px) {
+    
+    #nav{
         /* width: 80%; */
         justify-content: space-around;
     }
@@ -397,4 +502,21 @@ hr{
         align-items: center;
     }
 
+    #container{
+        width: 100%;
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 80px;
+        background-color: #FFFFFF;
+        /* width: 242px; */
+        min-height: 100vh;
+        overflow: hidden;
+        z-index: 9;
+        transition: 600ms;
+    }
+    
 }
