@@ -10,7 +10,7 @@
 <body>
     <div id="nav">
         <div class="dropdown-logo">
-            <img src="images/menu-bar.svg" alt="menu-bar" onclick="hide()">
+            <img style="cursor: pointer;" src="images/menu-bar.svg" alt="menu-bar" onclick="hide()">
             <img src="images/header-logo.svg" alt="logo">
         </div>
         <div class="searchbar">
@@ -20,7 +20,7 @@
         <div class="notification">
             <img src="images/notification-icon.svg" alt="notification">
             <div class="profile">
-                <img src="images/profile.png" alt="profile">
+                <img class="profile-img " src="images/profile.png" alt="profile">
                 <p>John Doe</p>
                 <img src="images/downward-arrow.svg" alt="downward-arrow">
             </div>
@@ -30,6 +30,11 @@
     <div id="container">
         <div id="sidebar" class="sidebar width-0">
             <div class="sidebarsub">
+                <div class="dashboard searchbar-dash">
+                    <img src="images/search-icon.svg" alt="search-icon">
+                    <input type="text" placeholder="search">
+                </div>
+
                 <div class="dashboard dashboard-active">
                     <img src="images/dashboard-default.svg" alt="dashboard-default">
                     <p>Dashboard</p>
